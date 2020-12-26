@@ -39,6 +39,10 @@ dependencies {
     implementation "org.koin:koin-android-ext:$koin_version"
     implementation "org.koin:koin-androidx-ext:$koin_version"
 
+    implementation "com.google.android.material:material:1.2.1"
+
+    testImplementation "io.mockk:mockk:1.10.3"
+
     //ANDROID
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
