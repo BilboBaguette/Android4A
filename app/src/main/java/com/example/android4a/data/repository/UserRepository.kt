@@ -17,6 +17,7 @@ class UserRepository(
             !emailUser.contains("@") || !emailUser.contains(".") -> return "InvalidEmail"
             userPassword == "" -> return "NoPassword"
             userPassword != verifPassword -> return "DifferentPasswords"
+            getUser(emailUser, userPassword) != null -> return "ExistingAccount"
         }
         val user = User(emailUser, userPassword)
         databaseDao.insert(user.toData())

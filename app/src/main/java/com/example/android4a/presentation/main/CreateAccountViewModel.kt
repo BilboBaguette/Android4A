@@ -24,6 +24,7 @@ class CreateAccountViewModel(
                 create.equals("InvalidEmail") -> InvalidEmail
                 create.equals("NoPassword") -> NoPassword
                 create.equals("DifferentPasswords") -> DifferentPasswords
+                create.equals("ExistingAccount") -> ExistingAccount
                 create.equals("Success") -> CreateSuccess(user)
                 else -> UnkownError
             }

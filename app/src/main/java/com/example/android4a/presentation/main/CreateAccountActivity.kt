@@ -61,6 +61,15 @@ class CreateAccountActivity : AppCompatActivity() {
                         }
                         .show()
                 }
+                ExistingAccount -> {
+                    MaterialAlertDialogBuilder(this)
+                        .setTitle("Account Error")
+                        .setMessage("This account already exists")
+                        .setPositiveButton("OK") { dialog, which ->
+                            dialog.dismiss()
+                        }
+                        .show()
+                }
                 UnkownError -> {
                     MaterialAlertDialogBuilder(this)
                         .setTitle("Unknown Error")

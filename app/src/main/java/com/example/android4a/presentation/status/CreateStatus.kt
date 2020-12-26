@@ -14,6 +14,8 @@ object NoPassword : CreateStatus()
 
 object DifferentPasswords : CreateStatus()
 
+object ExistingAccount : CreateStatus()
+
 object UnkownError : CreateStatus()
 
 
