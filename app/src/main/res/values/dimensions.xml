@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_spacing">10dp</dimen>
+    <dimen name="extra_spacing">30dp</dimen>
+    <dimen name="no_spacing">0dp</dimen>
+</resources>
