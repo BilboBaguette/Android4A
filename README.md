@@ -36,7 +36,7 @@ Lancer l'application sur le téléphone/émulateur connecté à Android Studio
 * Gitflow
 * Multiple types d'erreurs de création de compte
 
-#Présentation de l'application:
+# Présentation de l'application:
 
 ## Ecran de base:
 * Ecran de Login, où l'utilisateur doit rentrer son addresse e-mail et son mot de passe, si  l'utilisateur ne dispose pas d'un compte, il en est notifié et doit en créer un.
