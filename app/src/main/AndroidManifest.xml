@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android4a">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".injection.EsieaApplication"
         android:allowBackup="true"
@@ -18,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".presentation.main.CreateAccountActivity"/>
+        <activity android:name=".presentation.main.ListActivity"/>
     </application>
 
 </manifest>

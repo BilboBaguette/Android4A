@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.loginLiveData.observe(this, Observer {
             when(it){
                 is LoginSuccess -> {
-                    Toast.makeText(this, "User found", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this, "User found", Toast.LENGTH_SHORT).show()
+                    startListActivity()
                 }
                 LoginError -> {
                     MaterialAlertDialogBuilder(this)
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun startCreateActivity() {
         val intent = Intent(this, CreateAccountActivity::class.java)
+        this.startActivity(intent)
+    }
+
+    private fun startListActivity() {
+        val intent = Intent(this, ListActivity::class.java)
         this.startActivity(intent)
     }
 }

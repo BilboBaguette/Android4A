@@ -7,7 +7,7 @@ import androidx.room.Query
 import com.example.android4a.data.local.models.UserLocal
 
 @Dao
-interface DatabaseDao {
+interface DatabaseDaoLogin {
     @Query("SELECT * FROM userLocal")
     fun getAll(): List<UserLocal>
 
